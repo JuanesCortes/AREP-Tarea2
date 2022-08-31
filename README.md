@@ -1,3 +1,3 @@
-## LAB - 01 AREP
+## Tarea - 2 AREP
 
-### Juan Cortes
+### Juan Esteban Cortes

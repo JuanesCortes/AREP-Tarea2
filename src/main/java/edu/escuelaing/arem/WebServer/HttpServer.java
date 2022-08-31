@@ -1,5 +1,7 @@
 package edu.escuelaing.arem.WebServer;
 
+import edu.escuelaing.arem.WebServer.LecturaDisco.Lectura;
+
 import java.net.*;
 import java.io.*;
 
@@ -40,7 +42,7 @@ public class HttpServer {
             outputLine = "HTTP/1.1 200 OK\r\n"
                     + "Content-Type: text/html\r\n"
                     + "\r\n"
-                    +getForm();
+                    +getForm2();
 
             out.println(outputLine);
 
@@ -51,7 +53,9 @@ public class HttpServer {
         }
         //serverSocket.close();
     }
-
+    public static String getForm2(){
+        return Lectura.leer("index.html");
+    }
     public static String getForm(){
 
         return "<!DOCTYPE html>\n" +
